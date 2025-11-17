@@ -51,7 +51,7 @@ class Kalendarz extends JDialog {
         for (int d = 1; d <= dni; d++) {
             LocalDate data = miesiac.atDay(d);
             int ilosc = historia.getOrDefault(data, 0);
-            int procent=ilosc/oczekiwana*100;
+            int procent=(ilosc/oczekiwana)*100;
 
             JButton dzien = new JButton("<html><center>" + d + "<br>" + ilosc + " ml</center></html>");
          if (procent >= 100) {
@@ -62,7 +62,7 @@ class Kalendarz extends JDialog {
             dzien.setBackground(new Color(200, 224, 255));         
         } else if (procent > 25) {
            dzien.setBackground(new Color(228, 239, 255));
-        } else if (procent > 0) {
+        } else if (ilosc > 0) {
            dzien.setBackground(Color.WHITE);
         } else {
             dzien.setBackground(Color.PINK);

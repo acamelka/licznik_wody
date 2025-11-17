@@ -10,15 +10,15 @@ public class Main {
 
      public static void jaki_kwiat(int procent, JLabel kwiat){
         if (procent >= 100) {
-            kwiat.setIcon(new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek100.png"));
+            kwiat.setIcon(new ImageIcon("zdjecia/kwiatek100.png"));
         } else if (procent >= 75) {
-            kwiat.setIcon(new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek75.png"));
+            kwiat.setIcon(new ImageIcon("zdjecia/kwiatek75.png"));
         } else if (procent >= 50) {
-            kwiat.setIcon(new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek50.png"));
+            kwiat.setIcon(new ImageIcon("zdjecia/kwiatek50.png"));
         } else if (procent >= 25) {
-            kwiat.setIcon(new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek25.png"));
+            kwiat.setIcon(new ImageIcon("zdjecia/kwiatek25.png"));
         } else {
-            kwiat.setIcon(new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek0.png"));
+            kwiat.setIcon(new ImageIcon("zdjecia/kwiatek0.png"));
         }
      }
 
@@ -72,7 +72,7 @@ public class Main {
             ok.setBounds(350, 180, 75, 30);
             frame.add(ok);
 
-            ImageIcon kalendarzIcon = new ImageIcon("C:\\programowanie\\java\\WODA\\kalendarz.png");
+            ImageIcon kalendarzIcon = new ImageIcon("zdjecia/kalendarz.png");
             JButton kalendarz = new JButton(kalendarzIcon);
            
             kalendarz.setBounds(350, 50, 90, 90);
@@ -96,13 +96,13 @@ public class Main {
             frame.add(label);
 
             
-            ImageIcon konewkaIcon = new ImageIcon("C:\\programowanie\\java\\WODA\\konewka.png");
+            ImageIcon konewkaIcon = new ImageIcon("zdjecia/konewka.png");
             JLabel konewka = new JLabel(konewkaIcon);
             konewka.setBounds(280, 300, 100, 121);
             
 
             
-            ImageIcon kwiat0Icon = new ImageIcon("C:\\programowanie\\java\\WODA\\kwiatek0.png");
+            ImageIcon kwiat0Icon = new ImageIcon("zdjecia/kwiatek0.png");
             JLabel kwiat = new JLabel(kwiat0Icon);
             kwiat.setBounds(100, 100, 161, 300);
             frame.add(kwiat);
