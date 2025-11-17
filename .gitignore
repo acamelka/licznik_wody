@@ -1,0 +1,31 @@
+# Pliki wynikowe
+*.class
+*.jar
+*.war
+*.ear
+
+# Katalogi IDE
+/.idea/
+/*.iml
+*.log
+
+# Katalogi kompilacji
+/out/
+/target/
+/bin/
+
+# Systemowe
+.DS_Store
+Thumbs.db
+
+# Pliki tymczasowe
+*.swp
+*.tmp
+
+# Obrazki i dane testowe (jeśli nie chcesz ich wrzucać)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.avif
+*.txt
